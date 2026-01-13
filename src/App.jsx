@@ -17,6 +17,8 @@ const handleSubmit = (event) => {
   }
 };
 
+const baseUrl = import.meta.env.BASE_URL;
+
 const App = () => {
   return (
     <div className="page">
@@ -117,7 +119,10 @@ const App = () => {
             <h2>Experiencias que resumen mi trabajo</h2>
             <div className="experience-grid">
               <article className="experience-card reveal" style={{ '--delay': '0.1s' }}>
-                <img src="images/data-pipeline.svg" alt="Ilustracion de pipelines de datos" />
+                <img
+                  src={`${baseUrl}images/data-pipeline.svg`}
+                  alt="Ilustracion de pipelines de datos"
+                />
                 <h3>Pipelines y calidad de datos</h3>
                 <p>
                   Construyo flujos estables que conectan fuentes, limpian informacion
@@ -125,7 +130,7 @@ const App = () => {
                 </p>
               </article>
               <article className="experience-card reveal" style={{ '--delay': '0.2s' }}>
-                <img src="images/automation.svg" alt="Ilustracion de automatizacion" />
+                <img src={`${baseUrl}images/automation.svg`} alt="Ilustracion de automatizacion" />
                 <h3>Automatizacion inteligente</h3>
                 <p>
                   Creo scripts, bots y procesos que reducen tiempos operativos y
@@ -134,7 +139,7 @@ const App = () => {
               </article>
               <article className="experience-card reveal" style={{ '--delay': '0.3s' }}>
                 <img
-                  src="images/visualization.svg"
+                  src={`${baseUrl}images/visualization.svg`}
                   alt="Ilustracion de visualizacion de datos"
                 />
                 <h3>Visualizacion con foco en decisiones</h3>
