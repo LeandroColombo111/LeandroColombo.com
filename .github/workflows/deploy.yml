@@ -11,9 +11,6 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: LeandroColombo.com
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -33,5 +30,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: LeandroColombo.com/dist
+          publish_dir: dist
           publish_branch: gh-pages
