@@ -221,6 +221,14 @@ const App = () => {
                 <p>Herramienta para estimar ganancias en dolares a largo plazo.</p>
                 <a
                   className="text-link"
+                  href="https://leandrocolombo111.github.io/calculadora-ahorro/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Ver demo
+                </a>
+                <a
+                  className="text-link"
                   href="https://github.com/LeandroColombo111/calculadora-ahorro"
                   target="_blank"
                   rel="noreferrer"
@@ -231,6 +239,14 @@ const App = () => {
               <article className="project-card reveal" style={{ '--delay': '0.3s' }}>
                 <h3>Dashboard Meta Analysis</h3>
                 <p>Visualizacion del rendimiento de campanas con dispersion y analisis.</p>
+                <a
+                  className="text-link"
+                  href="https://leandrocolombo111.github.io/gauss-dasahboard/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Ver demo
+                </a>
                 <a
                   className="text-link"
                   href="https://github.com/LeandroColombo111/gauss-dasahboard"
